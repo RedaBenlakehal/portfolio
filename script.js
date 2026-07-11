@@ -85,14 +85,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
   const status = document.getElementById("formStatus");
   if (form && status) {
+    const fr = (document.documentElement.lang || "en").startsWith("fr");
+    const t = fr
+      ? {
+          noId: "⚠ Ajoutez votre identifiant Formspree dans index.html pour activer l'envoi.",
+          sending: "Envoi…",
+          ok: "✓ Merci ! Votre message a bien été envoyé.",
+          err: "✗ Une erreur est survenue — contactez-moi plutôt sur LinkedIn.",
+        }
+      : {
+          noId: "⚠ Add your Formspree ID in index.html to enable sending.",
+          sending: "Sending…",
+          ok: "✓ Thanks! Your message has been sent.",
+          err: "✗ Something went wrong — reach me on LinkedIn instead.",
+        };
     form.addEventListener("submit", async (ev) => {
       ev.preventDefault();
       if (form.action.includes("YOUR_FORM_ID")) {
-        status.textContent = "⚠ Add your Formspree ID in index.html to enable sending.";
+        status.textContent = t.noId;
         status.className = "cform__status err";
         return;
       }
-      status.textContent = "Sending…";
+      status.textContent = t.sending;
       status.className = "cform__status";
       try {
         const res = await fetch(form.action, {
@@ -101,14 +115,14 @@ document.addEventListener("DOMContentLoaded", () => {
           headers: { Accept: "application/json" },
         });
         if (res.ok) {
-          status.textContent = "✓ Thanks! Your message has been sent.";
+          status.textContent = t.ok;
           status.className = "cform__status ok";
           form.reset();
         } else {
           throw new Error("Request failed");
         }
       } catch {
-        status.textContent = "✗ Something went wrong — reach me on LinkedIn instead.";
+        status.textContent = t.err;
         status.className = "cform__status err";
       }
     });
