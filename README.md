@@ -33,10 +33,12 @@ folder. Also swap `og-image.png` if you want a custom social preview.
 
 Until then the form shows a friendly "add your ID" note instead of sending.
 
-## Enable analytics (optional)
-In `index.html` `<head>` there's a commented ANALYTICS block. Uncomment one:
-- **GoatCounter** (free, privacy-friendly): sign up, add your `data-goatcounter` URL.
-- **Google Analytics 4**: paste your `G-XXXXXXX` measurement ID.
+## Analytics
+[GoatCounter](https://www.goatcounter.com) is wired into both pages (EN + FR) —
+free, privacy-friendly, no cookies, so no consent banner is needed. Create the
+account once at https://www.goatcounter.com/signup with the code
+`redabenlakehal`, then view stats at https://redabenlakehal.goatcounter.com.
+Until the account exists, hits are simply dropped — nothing breaks.
 
 ## Deploy on GitHub Pages
 1. Push to GitHub (repo already contains an initial history).
