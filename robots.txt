@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://redabenlakehal.github.io/portfolio/sitemap.xml

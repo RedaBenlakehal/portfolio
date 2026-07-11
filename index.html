@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a192f" />
+
+  <!-- Primary SEO -->
+  <title>Mohamed Reda Benlakehal — Software Engineer (Node.js & AWS)</title>
+  <meta name="description" content="Mohamed Reda Benlakehal — Software Engineer, Full Stack (backend-focused) with Node.js & AWS. Clean & Hexagonal Architecture, DDD, TDD. Based in Paris, France." />
+  <meta name="author" content="Mohamed Reda Benlakehal" />
+  <meta name="keywords" content="Mohamed Reda Benlakehal, Software Engineer, Full Stack Developer, Node.js, AWS, TypeScript, Nest.js, Clean Architecture, Paris" />
+  <link rel="canonical" href="https://redabenlakehal.github.io/portfolio/" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mohamed Reda Benlakehal — Software Engineer" />
+  <meta property="og:description" content="Full Stack Software Engineer, backend-focused with Node.js & AWS. Clean & Hexagonal Architecture, DDD, TDD." />
+  <meta property="og:image" content="https://redabenlakehal.github.io/portfolio/og-image.png" />
+  <meta property="og:url" content="https://redabenlakehal.github.io/portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohamed Reda Benlakehal — Software Engineer" />
+  <meta name="twitter:description" content="Full Stack Software Engineer, backend-focused with Node.js & AWS." />
+  <meta name="twitter:image" content="https://redabenlakehal.github.io/portfolio/og-image.png" />
+
+  <!-- Favicon (inline SVG monogram) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a192f'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='46' font-weight='700' fill='%2364ffda' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohamed Reda Benlakehal",
+    "jobTitle": "Software Engineer — Full Stack (Node.js & AWS)",
+    "address": { "@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR" },
+    "url": "https://redabenlakehal.github.io/portfolio/",
+    "sameAs": [
+      "https://www.linkedin.com/in/mohamed-reda-benlakehal",
+      "https://github.com/RedaBenlakehal"
+    ],
+    "knowsAbout": ["Node.js", "AWS", "TypeScript", "Nest.js", "Clean Architecture", "Domain-Driven Design", "Test-Driven Development"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ANALYTICS (optional): uncomment ONE and add your ID. See README "Analytics".
+  Privacy-friendly GoatCounter (free):
+  <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  Google Analytics 4:
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+  -->
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo">MRB<span>.</span></a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.linkedin.com/in/mohamed-reda-benlakehal" class="nav__cta" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme" title="Toggle light / dark">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Hi, my name is</p>
+      <h1 class="hero__title">Mohamed Reda Benlakehal.</h1>
+      <h2 class="hero__subtitle">I build robust backends &amp; full-stack products.</h2>
+      <p class="hero__text">
+        I'm a Software Engineer based in Paris — full-stack with a backend
+        focus, specializing in <strong>Node.js</strong> and <strong>AWS</strong>.
+        I care about well-designed systems: Clean &amp; Hexagonal Architecture,
+        Domain-Driven Design, and Test-Driven Development. Most recently
+        <strong>Tech Lead</strong> at Tilia / BNP Personal Finance.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View my work</a>
+        <a href="https://www.linkedin.com/in/mohamed-reda-benlakehal" class="btn btn--ghost" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <div class="hero__meta">
+        <span class="hero__status"><span class="dot"></span> Open to opportunities</span>
+        <span aria-hidden="true">·</span>
+        <span>📍 Paris, France</span>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true"><span></span><p>scroll</p></div>
+  </section>
+
+  <main id="main">
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="section__num">01.</span>
+        <h2 class="section__title">About me</h2>
+        <span class="section__rule"></span>
+      </div>
+      <div class="about">
+        <div class="about__text">
+          <p>
+            I'm a full-stack software engineer with a strong backend
+            orientation, working mainly across the Node.js and AWS ecosystems.
+            Over the past several years I've delivered SaaS platforms, serverless
+            applications, and data tooling — from initial architecture through to
+            production, security hardening, and team leadership.
+          </p>
+          <p>
+            At <strong>Tilia / BNP Personal Finance</strong> I grew from
+            full-stack developer into a <strong>Tech Lead</strong> role — owning
+            architecture decisions, code reviews, CI/CD, security work with
+            pentesters, and mentoring, while building a serverless application
+            from scratch with Node.js, Angular and AWS.
+          </p>
+          <p>
+            I hold a Master's in web &amp; mobile development from ESTIAM (Paris),
+            and I'm driven by clean design and continuous improvement.
+            Technologies I reach for most:
+          </p>
+          <ul class="about__list">
+            <li>Node.js / Nest.js</li>
+            <li>TypeScript</li>
+            <li>AWS (serverless)</li>
+            <li>React &amp; Angular</li>
+            <li>Clean / Hexagonal Arch.</li>
+            <li>TDD &amp; CI/CD</li>
+          </ul>
+        </div>
+        <div class="about__aside">
+          <div class="about__portrait-frame">
+            <!-- To use a real photo: replace the div below with
+                 <img src="me.jpg" alt="Mohamed Reda Benlakehal" /> -->
+            <div class="about__portrait-img" aria-label="Portrait placeholder">MRB</div>
+          </div>
+          <div class="stats">
+            <div class="stat"><span class="stat__num">6+</span><span class="stat__label">years building software</span></div>
+            <div class="stat"><span class="stat__num">10+</span><span class="stat__label">projects delivered</span></div>
+            <div class="stat"><span class="stat__num">Tech</span><span class="stat__label">Lead experience</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <span class="section__num">02.</span>
+        <h2 class="section__title">Where I've worked</h2>
+        <span class="section__rule"></span>
+      </div>
+      <div class="timeline">
+        <div class="tl">
+          <div class="tl__dot"></div>
+          <div class="tl__body">
+            <div class="tl__head">
+              <h3>Full Stack Developer → Tech Lead</h3>
+              <span class="tl__date">Oct 2022 – Mar 2025</span>
+            </div>
+            <p class="tl__org">Tilia pour les aidants · BNP Personal Finance</p>
+            <p class="tl__desc">
+              Built a serverless assistance platform for caregivers from scratch
+              (Node.js, Angular, AWS). Evolved the backend architecture for
+              scalability, drove CI/CD and automated security controls,
+              collaborated with pentesters, and led the team as Tech Lead through
+              code reviews, mentoring and technical decisions.
+            </p>
+            <ul class="tags"><li>Node.js</li><li>Angular</li><li>AWS Serverless</li><li>DynamoDB</li><li>CI/CD</li></ul>
+          </div>
+        </div>
+        <div class="tl">
+          <div class="tl__dot"></div>
+          <div class="tl__body">
+            <div class="tl__head">
+              <h3>Full Stack Developer</h3>
+              <span class="tl__date">Since 2019</span>
+            </div>
+            <p class="tl__org">42C</p>
+            <p class="tl__desc">
+              Full-stack development across client projects, delivering web and
+              cloud solutions with a focus on clean architecture and maintainable,
+              well-tested code.
+            </p>
+            <ul class="tags"><li>TypeScript</li><li>Nest.js</li><li>React</li><li>AWS</li></ul>
+          </div>
+        </div>
+        <div class="tl">
+          <div class="tl__dot"></div>
+          <div class="tl__body">
+            <div class="tl__head">
+              <h3>Backend Developer</h3>
+              <span class="tl__date">Apr 2019 – Sep 2019</span>
+            </div>
+            <p class="tl__org">WI-TECH Group</p>
+            <p class="tl__desc">
+              Backend development — building and maintaining server-side services
+              and APIs.
+            </p>
+            <ul class="tags"><li>Java</li><li>Spring Boot</li><li>REST APIs</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <span class="section__num">03.</span>
+        <h2 class="section__title">Selected projects</h2>
+        <span class="section__rule"></span>
+      </div>
+
+      <!-- Featured -->
+      <article class="feature">
+        <div class="feature__body">
+          <p class="feature__eyebrow">Featured · 2025 – present</p>
+          <h3 class="feature__title">Streamix</h3>
+          <div class="feature__panel">
+            <p>
+              A SaaS platform for content management and orchestration that helps
+              companies centralize, structure and distribute their media across
+              digital channels. I designed robust <strong>Clean &amp; Hexagonal</strong>
+              architectures, integrated HubSpot via API with real-time webhooks for
+              event processing, and implemented multi-format video transcoding
+              (HLS, MP4) with AWS Elemental MediaConvert. Code quality tracked with
+              CodeScene; AI-assisted delivery to accelerate development.
+            </p>
+          </div>
+          <ul class="tags tags--accent"><li>React</li><li>Nest.js</li><li>TypeScript</li><li>AWS ECS/Lambda</li><li>MediaConvert</li><li>CDK</li></ul>
+        </div>
+      </article>
+
+      <article class="feature feature--reverse">
+        <div class="feature__body">
+          <p class="feature__eyebrow">Featured · 2022 – 2025</p>
+          <h3 class="feature__title">Tilia — BNP Personal Finance</h3>
+          <div class="feature__panel">
+            <p>
+              A dedicated assistance service for caregivers and people losing
+              autonomy. I built a full-stack <strong>serverless</strong> app from
+              scratch, evolved the backend for scalability and maintainability,
+              optimized API &amp; DynamoDB performance, hardened security with
+              pentesters, and contributed to the mobile apps (iOS / Android). As
+              Tech Lead: code reviews, mentoring, and architecture ownership.
+            </p>
+          </div>
+          <ul class="tags tags--accent"><li>Node.js</li><li>Angular</li><li>AWS Lambda</li><li>DynamoDB</li><li>Kotlin / Swift</li><li>SonarQube</li></ul>
+        </div>
+      </article>
+
+      <!-- Grid of other projects -->
+      <div class="projects">
+        <article class="card">
+          <div class="card__top">
+            <span class="card__folder">📁</span>
+            <div class="card__links">
+              <a href="https://pixt.cloud" target="_blank" rel="noopener" aria-label="Live site">↗</a>
+            </div>
+          </div>
+          <h3 class="card__title">PixT</h3>
+          <p class="card__desc">
+            A blockchain-based platform valuing photographers' work and
+            guaranteeing ethical practices for creators. Contributed to the
+            architecture, designed &amp; documented REST APIs, and integrated
+            Stripe payments and AWS S3 storage.
+          </p>
+          <ul class="card__tech"><li>React</li><li>Node.js</li><li>MongoDB</li><li>Stripe</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card__top"><span class="card__folder">📁</span><span class="card__badge">2021</span></div>
+          <h3 class="card__title">France Média Monde — Web ASRUN</h3>
+          <p class="card__desc">
+            A tool to ingest data from log files into a SQL database and surface
+            it client-side with rich filters. Designed the database, implemented
+            data models with TypeORM, and built a documented REST API with Swagger.
+          </p>
+          <ul class="card__tech"><li>Python</li><li>Nest.js</li><li>Angular</li><li>PostgreSQL</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card__top"><span class="card__folder">📁</span><span class="card__badge">2020</span></div>
+          <h3 class="card__title">ORK-IMMO</h3>
+          <p class="card__desc">
+            A solution to review real-estate rental documents, reducing manual
+            intervention and automating data processing. Implemented new features
+            and improved/optimized existing functionality.
+          </p>
+          <ul class="card__tech"><li>Angular</li><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card__top"><span class="card__folder">📁</span><span class="card__badge">2019</span></div>
+          <h3 class="card__title">Alabali</h3>
+          <p class="card__desc">
+            A collaborative marketplace connecting individuals who want to buy and
+            sell. Designed the project, implemented data models with Spring Data
+            JPA, and built a REST API with solid design patterns and JUnit tests.
+          </p>
+          <ul class="card__tech"><li>Java</li><li>Spring Boot</li><li>Angular</li><li>JUnit</li></ul>
+        </article>
+      </div>
+      <p class="projects__more">
+        More on <a href="https://github.com/RedaBenlakehal" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="section__head">
+        <span class="section__num">04.</span>
+        <h2 class="section__title">Education</h2>
+        <span class="section__rule"></span>
+      </div>
+      <div class="edu">
+        <div class="edu__item">
+          <div class="edu__head"><h3>Master — Web &amp; Mobile Development</h3><span>2019 – 2021</span></div>
+          <p class="edu__org">ESTIAM · Paris, France</p>
+        </div>
+        <div class="edu__item">
+          <div class="edu__head"><h3>Professional Bachelor — Connected &amp; Intelligent Objects</h3><span>2018 – 2019</span></div>
+          <p class="edu__org">Université Paris 8 · Paris, France</p>
+        </div>
+        <div class="edu__item">
+          <div class="edu__head"><h3>Bachelor — Computer Science</h3><span>2017 – 2018</span></div>
+          <p class="edu__org">Sorbonne Université · Paris, France</p>
+        </div>
+        <div class="edu__item">
+          <div class="edu__head"><h3>Computer Science (2 years)</h3><span>2015 – 2017</span></div>
+          <p class="edu__org">Université Abdelhamid Ibn Badis · Mostaganem, Algeria</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <span class="section__num">05.</span>
+        <h2 class="section__title">Skills &amp; tools</h2>
+        <span class="section__rule"></span>
+      </div>
+      <div class="skills">
+        <div class="skills__group">
+          <h3>Languages</h3>
+          <div class="chips"><span>TypeScript</span><span>JavaScript</span><span>Java</span><span>Python</span><span>Kotlin</span><span>Swift</span></div>
+        </div>
+        <div class="skills__group">
+          <h3>Frameworks</h3>
+          <div class="chips"><span>Node.js</span><span>Nest.js</span><span>Express.js</span><span>React.js</span><span>Angular</span><span>Spring Boot</span></div>
+        </div>
+        <div class="skills__group">
+          <h3>Cloud &amp; Data</h3>
+          <div class="chips"><span>AWS Lambda</span><span>API Gateway</span><span>DynamoDB</span><span>RDS</span><span>S3</span><span>CloudFront</span><span>PostgreSQL</span><span>MongoDB</span></div>
+        </div>
+        <div class="skills__group">
+          <h3>Architecture</h3>
+          <div class="chips"><span>Clean Architecture</span><span>Hexagonal</span><span>DDD</span><span>Event-Driven</span><span>SOLID</span></div>
+        </div>
+        <div class="skills__group">
+          <h3>Quality &amp; DevOps</h3>
+          <div class="chips"><span>TDD</span><span>Jest</span><span>JUnit</span><span>CI/CD</span><span>Bitbucket Pipelines</span><span>SonarQube</span></div>
+        </div>
+        <div class="skills__group">
+          <h3>Languages spoken</h3>
+          <div class="chips"><span>English</span><span>French</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <span class="section__num section__num--center">06.</span>
+      <h2 class="contact__title">Get in touch</h2>
+      <p class="contact__text">
+        I'm currently open to new opportunities — backend, full-stack, or
+        architecture challenges. Have a question or want to work together? Drop me
+        a message and I'll get back to you.
+      </p>
+
+      <!-- CONTACT FORM: create a free form at https://formspree.io, then replace
+           YOUR_FORM_ID below with your endpoint (e.g. xdorwkez). See README. -->
+      <form class="cform" id="contactForm" action="https://formspree.io/f/xjgnbrvq" method="POST">
+        <!-- Honeypot: hidden from humans; bots that fill it are silently dropped by Formspree -->
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
+        <div class="cform__row">
+          <label class="cform__field">
+            <span>Name</span>
+            <input type="text" name="name" required autocomplete="name" placeholder="Your name" />
+          </label>
+          <label class="cform__field">
+            <span>Email</span>
+            <input type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+          </label>
+        </div>
+        <label class="cform__field">
+          <span>Message</span>
+          <textarea name="message" rows="5" required placeholder="Tell me about your project or role…"></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary btn--lg">Send message</button>
+        <p class="cform__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact__socials">
+        <a href="https://www.linkedin.com/in/mohamed-reda-benlakehal" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/RedaBenlakehal" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed &amp; built by Mohamed Reda Benlakehal · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
